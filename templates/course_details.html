@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ course.name }}</title>
+</head>
+<body>
+    <h1>{{ course.name }} ({{ course.code }})</h1>
+    <p><strong>Instructor:</strong> {{ course.instructor }}</p>
+    <p><strong>Semester:</strong> {{ course.semester }}</p>
+    <p><strong>Schedule:</strong> {{ course.schedule }}</p>
+    <p><strong>Classroom:</strong> {{ course.classroom }}</p>
+    <p><strong>Prerequisites:</strong> {{ course.prerequisites }}</p>
+    <p><strong>Grading:</strong> {{ course.grading }}</p>
+    <p><strong>Description:</strong> {{ course.description }}</p>
+    <a href="{{ url_for('course_catalog') }}">Back to Catalog</a>
+</body>
+</html>

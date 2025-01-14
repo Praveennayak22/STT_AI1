@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="mt-5">
+    <h1 class="text-center">Welcome to the Course Information Portal</h1>
+    <p class="lead mt-4">
+        The Course Information Portal is designed to streamline and enhance the student experience by providing a comprehensive platform for exploring and understanding the courses offered by the university or department. This user-friendly portal consolidates essential course details in a single, accessible location, empowering students to make informed decisions about their academic journey.
+    </p>
+
+    <h2>Features of the Course Information Portal</h2>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <strong>Course Catalog:</strong> Browse a complete list of available courses, organized for easy navigation.
+        </li>
+        <li class="list-group-item">
+            <strong>Course Details:</strong> View in-depth information for each course, including instructor names, semester offerings, detailed course content, prerequisites, grading components, and links to external resources.
+        </li>
+        <li class="list-group-item">
+            <strong>Department Information:</strong> See which department offers each course, helping students align their selections with their academic focus.
+        </li>
+    </ul>
+
+    <h2 class="mt-4">Why Use This Portal?</h2>
+    <p>
+        By centralizing key course information, the Course Information Portal makes it easier for students to explore their options and plan their academic path. Whether you are registering for your first semester or choosing electives for your final year, this portal is your trusted companion in navigating the academic landscape with confidence.
+    </p>
+
+    <p class="text-center mt-4">
+        <a href="{{ url_for('course_catalog') }}" class="btn btn-primary btn-lg">Explore the Course Catalog</a>
+    </p>
+</div>
+{% endblock %}
